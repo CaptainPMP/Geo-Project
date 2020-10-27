@@ -7,7 +7,7 @@ let allQuestion = [
         "answer" : "It's very hard. (hard sus sus)" },
     {   "name" : '"Is Anfield bird?"',
         "bool" : false,
-        "answer" : "He is very Garuda." }
+        "answer" : "He is very very Garuda." }
     
 ];
 
