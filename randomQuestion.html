@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="randomQuestion.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <h1>สุ่มคำถามระดับง่าย</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="before-body">
+        <div class="container">
+            <div class="start-random-btn" id="first-random-container">
+                <a href="#" id="first-random" class="start-random-click" onclick="randomQuestion()">สุ่มเลย!!!</a>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <div class="container">
+            <div class="question-container" id="question-container">
+                <div class="question-items">
+                    <h2 id="question-name" class="question-name"></h2>
+                </div>
+                <div class="question-items">
+                    <div class="question-items-container" id="QIContainer">
+                        <div class="question-items-container-items" id="right">
+                            <div class="question-items-left" id="left">
+                                <a href="#" class="bool_box" onclick="true_value()">
+                                    <i class="fa fa-check" aria-hidden="true"></i> ถูก
+                                </a>
+                            </div>
+                        </div>
+                        <div class="question-items-container-items" id="wrong">
+                            <div class="question-items-right" id="right">
+                                <a href="#" class="bool_box" onclick="false_value()">
+                                    <i class="fa fa-times" aria-hidden="true"></i> ผิด
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-items">
+                    <div class="question-items-container2">
+                        <div class="ans-area">
+                            <div class="ans-area-items">
+                                <p id="value_bool" class="ans-head"></p>
+                            </div>
+                            <div class="ans-area-items">
+                                <p id="answer" class="ans-body"></p>
+                            </div>
+                            <div class="ans-area-items">
+                                <a href="#" id="ans-random" class="ans-footer" onclick="randomQuestion()"><i class="fa fa-question-circle-o" aria-hidden="true"></i> สุ่มคำถาม</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="question-items">
+                    <div class="question-items-container3">
+                        <div class="footer-area">
+                            <a href="#" class="footer-home"><i class="fa fa-home" aria-hidden="true"></i> กลับหน้าหลัก</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kanit-container">
+        <a href="#" id="to-kanit-font" class="to-kanit-font" onclick="kanitFont()">เปลี่ยน Font</a>
+    </div>
+    <script src="randomQuestion.js"></script>
+</body>
+</html>
