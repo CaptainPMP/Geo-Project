@@ -114,14 +114,14 @@ let allQuestion = [
     {   "name" : '"ชายฝั่งทะเลแบ่งเป็น 3 ประเภท?"',
         "bool" : false,
         "answer" : "ผิด เพราะ ชายฝั่งทะเลแบ่งเป็น 2 ประเภท" },
+
     {   "name" : '"prayut glacier  คือ ธารน้ำแข็งภูเขา?"',
         "bool" : false,
         "answer" : "ผิด เพราะ alpine glacier คือ ธารน้ำแข็งภูเขา" },
 
     {   "name" : '"Is this jojo reference?"',
         "bool" : true,
-        "answer" : "It's jojo reference." },
-    
+        "answer" : "It's jojo reference." }
 ];
 
 var bool_input_value;
