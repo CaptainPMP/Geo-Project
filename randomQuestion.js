@@ -1,14 +1,127 @@
 let allQuestion = [
-    {   "name" : '"Is this jojo reference?"',
+    {   "name" : '"กระบวนการเปลี่ยนแปลงแบ่งเป็น 2 ลักษณะ ?"',
+        "bool" : true,
+        "answer" : "มี 2 ลักษณะ" },
+
+    {   "name" : '"กระบวนการเปลี่ยนแปลงภายในแบ่งเป็น 3  กระบวนการ?"',
+        "bool" : true,
+        "answer" : "มีทั้งหมด 3 กระบวนการ" },
+
+    {   "name" : '"หุบเขาจมน้ำเกิดจากกระบวนการทรุดตัวส่วนชะวากทะเลเกิดจากการกระบวนการยกตัว?"',
+        "bool" : false,
+        "answer" : "หุบเขาจมน้ำกับชะวากทะเลคืออันเดียวกัน เกิดจากการทรุดตัวเหมือนกัน" },
+
+    {   "name" : '"กระบวนการภูเขาไฟเกิดจากแรงภายในโลกปะทุลาวาขึ้นมาเป็นแมกมา?"',
+        "bool" : false,
+        "answer" : "เกิดจากแรงภายในโลกปะทุแมกมาเป็นลาวา" },
+    
+    {   "name" : '"กระบวนการภูเขาไฟเป็นกระบวนการแปรสันฐานอย่างรวดเร็ว?"',
+        "bool" : true,
+        "answer" : "มันเปลี่ยนอย่างรวดเร็ว" },
+    
+    {   "name" : '"นายฟูฟูต้องการปลูกพืชเพื่อดำนงชีวิตและขายจึงเลือกที่จะไปปลูกแถวหุบเขาซึ่งเกิดจากกัดกร่อนของน้ำ นายฟูฟูจึงคิดว่า \"บริเวณนี้จะต้องปลูกพืชได้ดีแน่ๆ\"?"',
+        "bool" : false,
+        "answer" : "หุบเขาเกิดจากการบีบตัว" },
+    
+    {   "name" : '"กระบวนการเปลี่ยนแปลงที่เกิดจากน้ำใต้ดินเป็นการเปลี่ยนแปลงภายใน?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ เป็นการเปลี่ยนแปลงภายนอกโลก" },
+    
+    {   "name" : '"เทือกเขาเกิดจากการบีบตัว?"',
+        "bool" : true,
+        "answer" : "มันเกิดจากการบีบตัว" },
+    
+    {   "name" : '"การยกตัวทำให้เกิดภูเขาและที่ราบสูง?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ ที่ราบสูงเกิดจากการยกตัวส่วนภูเขาเกิดจากการบีบตัว" },
+    
+    {   "name" : '"กระบวนการเปลี่ยนแปลงภายในนั้นไม่ได้เกิดตลอดเวลา?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ กระบวนการเปลี่ยนแปลงภายในเกิดขึ้นตลอดเวลา" },
+    
+    {   "name" : '"ซุ้มหินชายฝั่งเกิดจากการผุผัง?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ ซุ้มหินชายฝั่งเกิดจากการกัดกร่อนโดยคลื่น" },
+    
+    {   "name" : '"เกาะหินโด่งเกิดจากการกัดเซาะของคลื่น?"',
+        "bool" : true,
+        "answer" : "มันเกิดจากการกัดเซาะของคลื่น" },
+    
+    {   "name" : '"เนินตะกอนรูปสามเหลี่ยมเป็นเนินตะกอนที่น้ำพัดพามาจากหุบเขาลาดชัน?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ เนินตะกอนที่น้ำพัดพามาจากหุบเขาลาดชัน คือ เนินตะกอนรูปพัด" },
+    
+    {   "name" : '"ลุงพลคนดีไปถ่าย MV บริเวณกุมภลักษณ์ บริเวณที่ลุงพลไปถ่ายนั้นเกิดจากการถับถมของน้ำ?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ กุมภลักษณ์เกิดจากการกัดกร่อนโดยน้ำ" },
+    
+    {   "name" : '"หลุมยุบเป็นภูมิประเทศที่เกิดบนพื้นน้ำ"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ หลุมยุบเป็นภูมิประเทศที่เกิดบนพื้นดิน" },
+    
+    {   "name" : '"หินปูนส่วนใหญ่เกิดในถ้ำ?"',
+        "bool" : true,
+        "answer" : "หินปูนเกิดจากถ้ำ" },
+    
+    {   "name" : '"หลุมยุบมักมีรัศมี 10-100 เมตร?"',
+        "bool" : true,
+        "answer" : "มีรัศมี 10-100 เมตร เส้นผ่านศูนย์กลาง 20-200 เมตร" },
+    
+    {   "name" : '"เสาหินเกิดจากการกัดกร่อนของลม?"',
+        "bool" : true,
+        "answer" : "เสาหินเกิดจากการกัดกร่อนของลม" },
+    
+    {   "name" : '"สันเขาอาแรตเกิดจากการบีบตัว?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ สันเขาอาแรตเกิดจากการกัดกร่อนโดยธารน้ำแข็ง" },
+    
+    {   "name" : '"ยอดเขาพีระมิด อยู่บนยอดเขาสูงที่มีธารน้ำแข็งปกคลุม?"',
         "bool" : true,
         "answer" : "It's jojo reference." },
-    {   "name" : '"Is Thanaporn\'s test easy?"',
-        "bool" : false,
-        "answer" : "It's very hard. (hard sus sus)" },
-    {   "name" : '"Is Anfield bird?"',
-        "bool" : false,
-        "answer" : "He is very very Garuda." }
     
+    {   "name" : '"ลากูนเป็นแหล่งน้ำเค็มที่แคบตื้น?"',
+        "bool" : true,
+        "answer" : "ลากูน ทั้งเค็ม แคบ ตื้น" },
+    
+    {   "name" : '"สันดอนเกิดจากลม?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ สันดอนเกิดจากการที่กระแสน้ำพัดตะกอนมาทับถม" },
+    
+    {   "name" : '"เขาอีโต้เกิดจากการบีบตัว?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ เขาอีโต้เกิดจากการยกตัว" },
+    
+    {   "name" : '"กระบวนการผุผังอยู่กับที่แบ่งเป็น 3 อย่าง?"',
+        "bool" : true,
+        "answer" : "กระบวนการผุผังอยู่กับที่แบ่งเป็น 3 อย่าง" },
+    
+    {   "name" : '"แผ่นดินถล่มเกิดจากการเปลี่ยนแปลงภายใน?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ แผ่นดินถล่มเกิดจากการเปลี่ยนแปลงภายนอก" },
+    
+    {   "name" : '"การเลื่อนไถลเกิดจากการเคลื่อนที่ของมวลเศษหินและดิน?"',
+        "bool" : true,
+        "answer" : "การเลื่อนไถลเกิดจากการเคลื่อนที่ของมวลเศษหินและดิน" },
+    
+    {   "name" : '"การไหลของดินเป็นกระบวนการเคลื่อนที่ของดินที่ชุ่มน้ำ?"',
+        "bool" : true,
+        "answer" : "การไหลของดินเป็นกระบวนการเคลื่อนที่ของดินที่ชุ่มน้ำ" },
+    
+    {   "name" : '"ธารน้ำแข็งเป็นตัวการทำให้เกิดการเปลี่ยนแปลงภายนอก?"',
+        "bool" : true,
+        "answer" : "ธารน้ำแข็ง ทำให้เกิดการเปลี่ยนแปลงภายนอก" },
+    
+    {   "name" : '"ชายฝั่งทะเลแบ่งเป็น 3 ประเภท?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ ชายฝั่งทะเลแบ่งเป็น 2 ประเภท" },
+
+    {   "name" : '"prayut glacier  คือ ธารน้ำแข็งภูเขา?"',
+        "bool" : false,
+        "answer" : "ผิด เพราะ alpine glacier คือ ธารน้ำแข็งภูเขา" },
+
+    {   "name" : '"Is this jojo reference?"',
+        "bool" : true,
+        "answer" : "It's jojo reference." }
 ];
 
 var bool_input_value;
@@ -28,6 +141,10 @@ function randomQuestion() {
     document.getElementById("first-random-container").style.display = "none";
     // document.getElementById("ans-random").style.display = "none";
     document.getElementById("to-kanit-font").style.marginTop = "2rem";
+    // document.getElementById("left-btn").style.background = "rgb(52, 216, 52)";
+    // document.getElementById("right-btn").style.background = "rgb(216, 52, 52)";
+    document.getElementById("left-btn").style.background = "rgb(0, 42, 180)";
+    document.getElementById("right-btn").style.background = "rgb(0, 42, 180)";
 }
 
 function true_value() {
@@ -39,6 +156,7 @@ function true_value() {
         document.getElementById("answer").innerHTML = allQuestion[rand_number].answer;
         document.getElementById("right").style.display = "none";
         document.getElementById("QIContainer").style.justifyContent = "center";
+        document.getElementById("left-btn").style.background = "rgb(52, 216, 52)";
     }
     else {
         document.getElementById("value_bool").innerHTML = '<i class="fa fa-times" aria-hidden="true"></i> คุณไม่ได้เดินหมาก';
@@ -46,6 +164,7 @@ function true_value() {
         document.getElementById("answer").innerHTML = allQuestion[rand_number].answer;
         document.getElementById("right").style.display = "none";
         document.getElementById("QIContainer").style.justifyContent = "center";
+        document.getElementById("left-btn").style.background = "rgb(216, 52, 52)";
     }
 }
 function false_value(){
@@ -57,6 +176,7 @@ function false_value(){
         document.getElementById("answer").innerHTML = allQuestion[rand_number].answer;
         document.getElementById("left").style.display = "none";
         document.getElementById("QIContainer").style.justifyContent = "center";
+        document.getElementById("right-btn").style.background = "rgb(52, 216, 52)";
     }
     else {
         document.getElementById("value_bool").innerHTML = '<i class="fa fa-times" aria-hidden="true"></i> คุณไม่ได้เดินหมาก';
@@ -64,6 +184,7 @@ function false_value(){
         document.getElementById("answer").innerHTML = allQuestion[rand_number].answer;
         document.getElementById("left").style.display = "none";
         document.getElementById("QIContainer").style.justifyContent = "center";
+        document.getElementById("right-btn").style.background = "rgb(216, 52, 52)";
     }
 }
 

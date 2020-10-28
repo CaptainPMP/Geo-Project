@@ -119,18 +119,22 @@ header h1 {
 }
 
 .question-items-container-items:nth-child(1) {
-	background: rgb(52, 216, 52);
+	/* background: rgb(52, 216, 52); */
+	background: rgb(0, 42, 180);
 	transition: .5s;
 }
 .question-items-container-items:nth-child(1):hover {
-	background: rgb(42, 175, 42);
+	/* background: rgb(42, 175, 42); */
+	background: rgb(0, 23, 98);
 }
 .question-items-container-items:nth-child(2) {
-	background: rgb(216, 52, 52);
+	/* background: rgb(216, 52, 52); */
+	background: rgb(0, 42, 180);
 	transition: .5s;
 }
 .question-items-container-items:nth-child(2):hover {
-	background: rgb(180, 44, 44);
+	/* background: rgb(180, 44, 44); */
+	background: rgb(0, 23, 98);
 }
 
 .bool_box {
@@ -140,9 +144,7 @@ header h1 {
 	text-decoration: none;
 	color: white;
 }
-#value_bool {
-	font-weight: bold;
-}
+
 .question-items-container2 {
 	/* display: flex; */
 	text-align: center;
