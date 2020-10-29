@@ -55,7 +55,7 @@ let allQuestion = [
         "bool" : false,
         "answer" : "ผิด เพราะ กุมภลักษณ์เกิดจากการกัดกร่อนโดยน้ำ" },
     
-    {   "name" : '"หลุมยุบเป็นภูมิประเทศที่เกิดบนพื้นน้ำ"',
+    {   "name" : '"หลุมยุบเป็นภูมิประเทศที่เกิดบนพื้นน้ำ?"',
         "bool" : false,
         "answer" : "ผิด เพราะ หลุมยุบเป็นภูมิประเทศที่เกิดบนพื้นดิน" },
     
@@ -71,7 +71,7 @@ let allQuestion = [
         "bool" : true,
         "answer" : "เสาหินเกิดจากการกัดกร่อนของลม" },
     
-    {   "name" : '"สันเขาอาแรตเกิดจากการบีบตัว ?"',
+    {   "name" : '"สันเขาอาแรตเกิดจากการบีบตัว?"',
         "bool" : false,
         "answer" : "ผิด เพราะ สันเขาอาแรตเกิดจากการกัดกร่อนโดยธารน้ำแข็ง" },
     
@@ -119,7 +119,7 @@ let allQuestion = [
         "bool" : false,
         "answer" : "ผิด เพราะ alpine glacier คือ ธารน้ำแข็งภูเขา" },
 
-    {   "name" : '"Is this jojo reference?"',
+    {   "name" : '"Is this jojo reference ?"',
         "bool" : true,
         "answer" : "It's jojo reference." }
 ];
