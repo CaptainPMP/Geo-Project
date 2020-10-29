@@ -95,7 +95,9 @@ header h1 {
 	/* border: 1px solid red; */
 	margin-top: -2.5rem;
 }
-
+#question-name {
+  line-height: 120%;
+}
 .question .question-container {
 	width: 800px;
 	display: none;
@@ -188,6 +190,7 @@ a.footer-home {
 .kanit-container {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 .to-kanit-font {
