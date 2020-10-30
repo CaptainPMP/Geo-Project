@@ -61,32 +61,3 @@ html {
     max-width: 1140px;
 	margin: 0;
 }
-
-header {
-    text-align: center;
-    font-size: 2rem;
-    padding: 3rem 0;
-	border: 1px solid red;
-	display: flex;
-	justify-content: center;
-}
-
-.main {
-    display: flex;
-	justify-content: center;
-	height: 80%;
-}
-
-embed {
-	width: 100vh;
-	height: 500px;
-}
-
-footer {
-	border: 1px solid red;
-	width: auto;
-}
-
-.main-container {
-	display: flex;
-}
