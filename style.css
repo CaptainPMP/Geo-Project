@@ -1,0 +1,175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+    /* font-family: 'Sarabun', sans-serif; */
+    font-family: 'Kanit', sans-serif;
+}
+
+.Sarabun-font {
+	font-family: 'Sarabun', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+	margin: 0;
+}
+
+header {
+	font-size: 2rem;
+	padding: 3rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.header	{
+	/* border: 1px solid red; */
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+}
+
+main{
+	/* border: 1px solid red; */
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	background: rgb(236, 236, 236);
+}
+
+.logo {
+	border: 1px solid red;
+	height: 60px;
+	width: 60px;
+	margin: 0 15px;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	/* width: 800px; */
+	/* border: 1px solid red; */
+/* 	width: 800px;
+	border: 1px solid black; */
+}
+
+.mi-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.mi-container-items {
+	display: flex;
+	justify-content: center;
+	padding: 0rem 0;
+}
+
+.main-btn {
+	color: white;
+	background: blue;
+	padding: .75rem 1.5rem;
+	border-radius: 2rem;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.main-btn:first-child {
+	margin-top: 1rem;
+}
+
+.main-btn:last-child {
+	margin-bottom: 1rem;
+}
+
+.main-btn:hover {
+	background: rgb(0, 0, 110);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+.maker-container ul li {
+	font-size: 1.3rem;
+	list-style-type: disc;
+	margin: .5rem 0;
+}
+
+.maker-container ul li:first-child {
+	position: relative;
+	text-align: center;
+	list-style-type: none;
+	margin: 1.25rem 0;
+	font-size: 1.85rem;
+} 
+.maker-container ul li:last-child {
+	position: relative;
+	text-align: center;
+	list-style-type: none;
+	margin: 1.25rem 0;
+}
+
+@media screen and (max-width : 520px) {
+	.header {
+		flex-direction: column;
+	}
+	.header .logo {
+		margin-bottom: 1.5rem;
+	}
+	.header h1 {
+		margin: 0 1rem;
+		text-align: center;
+	}
+}
+/* 
+.mi-container-items:nth-child(1) {
+	font-size: 1.5rem;
+} */
