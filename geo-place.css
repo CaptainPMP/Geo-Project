@@ -62,6 +62,14 @@ html {
 	margin: 0;
 }
 
+header {
+    font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	margin: 3rem 0;
+	font-weight: bold;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -81,6 +89,18 @@ html {
     text-align: center;
 }
 
+a.footer-home {
+    text-decoration: none;
+	color: rgb(141, 141, 141);
+	/* font-weight: bold; */
+	font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
 /* main {
     display: flex;
     justify-content: space-between;
