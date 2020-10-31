@@ -85,10 +85,17 @@ main{
 }
 
 .logo {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	height: 60px;
 	width: 60px;
 	margin: 0 15px;
+	/* position: relative; */
+}
+
+.img-logo {
+	/* position: absolute; */
+	width: 60px;
+	height: 60px;
 }
 
 .main-container {

@@ -72,10 +72,16 @@ header {
 }
 
 .logo {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	height: 60px;
 	width: 60px;
 	margin: 0 15px;
+}
+
+.img-logo {
+	/* position: absolute; */
+	width: 60px;
+	height: 60px;
 }
 
 .header-container {
@@ -89,11 +95,6 @@ main {
 	justify-content: center;
 }
 
-.main-container {
-	width: 800px;
-	border: 2px solid black;
-	padding: 1.5rem;
-}
 
 a.footer-home {
     text-decoration: none;
@@ -102,16 +103,22 @@ a.footer-home {
 	font-size: 1.5rem;
 }
 
-li {
-	margin: .5rem 0;
-	line-height: 1.5;
-	font-size: 1.2rem;
+.body-container {
+	display: flex;
+	justify-content: center;
+}
+
+.main-img {
+	width: 80vw;
+	height: auto;
+	z-index: -1;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+	margin: 2rem 0;
+	position: relative;
 }
 
 @media screen and (max-width : 900px) {

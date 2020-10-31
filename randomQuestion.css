@@ -71,10 +71,16 @@ header {
 }
 
 .logo {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	height: 60px;
 	width: 60px;
 	margin: 0 15px;
+}
+
+.img-logo {
+	/* position: absolute; */
+	width: 60px;
+	height: 60px;
 }
 
 .header {
@@ -242,5 +248,18 @@ footer {
 @media screen and (max-width : 450px) {
 	.question-container {
 		width: 300px !important;
+	}
+}
+
+@media screen and (max-width : 520px) {
+	.header {
+		flex-direction: column;
+	}
+	.header .logo {
+		margin-bottom: 1.5rem;
+	}
+	.header h1 {
+		margin: 0 1rem;
+		text-align: center;
 	}
 }
