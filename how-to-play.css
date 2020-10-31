@@ -61,3 +61,81 @@ html {
     max-width: 1140px;
 	margin: 0;
 }
+
+header {
+	padding: 3rem 0;
+	text-align: center;
+	font-size: 2rem;
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: center;
+}
+
+.logo {
+	border: 1px solid red;
+	height: 60px;
+	width: 60px;
+	margin: 0 15px;
+}
+
+.header-container {
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.main-container {
+	width: 800px;
+	border: 2px solid black;
+	padding: 1.5rem;
+}
+
+a.footer-home {
+    text-decoration: none;
+	color: rgb(141, 141, 141);
+	/* font-weight: bold; */
+	font-size: 1.5rem;
+}
+
+li {
+	margin: .5rem 0;
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width : 900px) {
+	.main-container {
+		width: 600px;
+	}
+}
+@media screen and (max-width : 730px) {
+	.main-container {
+		width: 500px;
+	}
+}
+@media screen and (max-width : 600px) {
+	.main-container {
+		width: 400px;
+	}
+}
+@media screen and (max-width : 500px) {
+	.main-container {
+		width: 300px;
+	}
+}
+@media screen and (max-width : 400px) {
+	.main-container {
+		width: 200px;
+	}
+}

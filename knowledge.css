@@ -71,6 +71,19 @@ header {
 	justify-content: center;
 }
 
+.logo {
+	border: 1px solid red;
+	height: 60px;
+	width: 60px;
+	margin: 0 15px;
+}
+
+.header-container {
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+}
+
 .main {
     display: flex;
 	justify-content: center;
