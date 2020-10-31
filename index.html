@@ -74,11 +74,11 @@
             <div class="maker-container">
                 <ul>
                     <li>จัดทำโดย</li>
-                    <li>นางสาวมัณฑนา จันทร์ศรี เลขที่ 1</li>
-                    <li>นายนพดล เพ็ชรดำ เลขที่ 7</li>
-                    <li>นางสาวจิดาภา วงศ์อุปราช เลขที่ 8</li>
-                    <li>นายธนกร บุตรสมาน เลขที่ 23</li>
-                    <li>นายภูมิภัทร พรพนารัตน์ เลขที่ 25</li>
+                    <li id="mantana">นางสาวมัณฑนา จันทร์ศรี เลขที่ 1</li>
+                    <li id="noppadol">นายนพดล เพ็ชรดำ เลขที่ 7</li>
+                    <li id="jidapa">นางสาวจิดาภา วงศ์อุปราช เลขที่ 8</li>
+                    <li id="thanakorn">นายธนกร บุตรสมาน เลขที่ 23</li>
+                    <li id="pumipat">นายภูมิภัทร พรพนารัตน์ เลขที่ 25</li>
                     <li>ชั้นมัธยมศึกษาปีที่ 5/2</li>
                 </ul>
             </div>
@@ -87,5 +87,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#noppadol").click(function(){
+                alert("ผมเป็นโลลิคอน ชอบโลลิที่สุด");
+            });
+            $("#pumipat").click(function(){
+                alert("ผมคนนี้ชอบคุรุมิ");
+            });
+        })
+    </script>
 </body>
 </html>
